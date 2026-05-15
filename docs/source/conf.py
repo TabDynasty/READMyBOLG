@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'ReadmyBlog'
-copyright = '2021, Graziella'
+copyright = '2026, TabDynasty'
 author = 'tabDynasty'
 
 release = '0.1'
@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'myst_parser',
 ]
 
 intersphinx_mapping = {
@@ -26,6 +27,11 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # -- Options for HTML output
 
